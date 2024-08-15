@@ -1,0 +1,8 @@
+numpy
+pandas
+seaborn
+tensorflow==2.9.2
+django
+google-cloud-storage
+-e .
+
