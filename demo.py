@@ -15,5 +15,6 @@ data_ingestion_logger.info("Data ingestion started")
 data_transformation_logger.info("data transformation started")
 
 obj=GcloudSyncer()
-
+data_ingestion_logger.info(f"downloading data from google cloud")
 obj.sync_folder_from_gcloud(gcp_bucket_url="nlp-hate-speech-data",filename="dataset.zip",destination="downloads")
+data_ingestion_logger.info(f"data downloaded successfully!")
